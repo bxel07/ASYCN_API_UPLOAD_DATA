@@ -1,0 +1,25 @@
+ //spesifik mengambil data untuk ekstensi
+          /*  if(preg_match("/(?<=\/)[^\/,]*(?=;)/", $this->enc, $match))  {
+                $this->ext = $match[0];
+           } else {
+            echo "error pattern not same";
+           }
+
+//getting binary64 image spesifik
+          $bin = preg_replace("/image\/[a-zA-Z]+;base64,/","",$this->enc);
+          if($bin !== null) {
+            $this->dec = base64_decode($bin);
+            echo " decode berhasil";
+          } */
+
+
+
+// Menyimpan data dari json ke database
+// menampilkan data dari json atau database
+// melakukan pembaharuan data di json dan database
+
+
+// JSON hanya digunakan sebagai tempat penyimpanan data sementara sebelum disimpan ke database
+// JSON digunakan untuk mempermudah pembangunan API karena format data json akan lebih kecil dan mudah untuk di maintenace
+
+//
