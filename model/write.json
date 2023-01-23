@@ -1,3 +1,20 @@
 [
-  
+    {
+        "id": 1,
+        "kategori": "meme",
+        "tag": "zongli",
+        "image": "63bf6ff50fda6.jpeg"
+    },
+    {
+        "id": 2,
+        "kategori": "meme",
+        "tag": "zongli",
+        "image": "63bf7097aac5e.jpeg"
+    },
+    {
+        "id": 3,
+        "kategori": "meme",
+        "tag": "zongli",
+        "image": "63bf74c1ef3f2.jpeg"
+    }
 ]

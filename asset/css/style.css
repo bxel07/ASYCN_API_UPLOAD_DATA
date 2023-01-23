@@ -1,0 +1,211 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+	-ms-box-sizing: border-box !important;
+	box-sizing: border-box !important;
+}
+
+body {
+	color: 	#aa7eee; 
+    background:  #3e3e42;
+}
+.container {
+    display: grid;
+    max-height: fit-content;
+    max-height: -moz-max-content;
+    grid-template-columns: 13rem 1fr;
+    grid-template-rows: 5rem 1fr;
+    grid-template-areas: 
+    "header header"
+    "nav main"
+    "footer footer"
+    ;
+    gap: 0.8rem; 
+}
+
+.header {
+    grid-area: header;
+}
+
+.header .head_list {
+    box-shadow: 0px 0px 10px blue;
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header .head_list .head_item {
+    list-style: none;
+ }
+
+ .header .head_list .head_item:first-child {
+    margin-right: auto;
+    margin-left: 2rem;
+ }
+.header .head_list .head_item a {
+    text-decoration: none;
+    margin-right: 2rem;
+    color: 	#aa7eee;
+}
+
+.nav {
+    grid-area: nav;
+    padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+}
+
+.nav .nav__list{
+    box-shadow: 0px 0px 10px blue;
+    list-style: none;
+    color: #aa7eee;
+    padding: 0.9rem 0;
+    width: 13rem;
+    height: 83vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.nav .nav__list .navtag::after{ 
+    content: "\a";
+    white-space: pre;
+    display: block;
+    margin: 0 auto;
+}
+.nav .nav__list .nav__item{ 
+    box-shadow: 0px 0px 10px blue;
+    width: 12rem;
+    height: 1.5rem;
+    text-align: center;
+}
+
+
+.nav .nav__list .nav__item a{ 
+    text-decoration: none;
+    color: #aa7eee;
+}
+
+
+.image__galery{
+    grid-area: main;
+    padding: 1.2rem 1.2rem 0rem 1.2rem;
+}
+
+.image__galery .image__order{
+    box-shadow: 0px 0px 10px blue;
+    padding: 1rem 1rem;
+   /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-auto-flow: row;
+    gap: 1rem; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap :1rem;
+}
+
+.image__galery > .image__item{
+   position: relative;
+   flex-basis: 160px;
+   cursor: pointer;
+}
+
+.image__galery::after{
+    content: '';
+    flex-basis: 160px;
+    cursor: pointer;
+}
+
+
+/* .image__galery .image__order .column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} */
+
+.image__galery .image__item .setimage{
+    object-fit: cover;
+   /*  width: 100%;
+    height: 100%; */
+    max-width: 160px;
+    max-height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.image__galery #order1 {
+   box-shadow: 0px 0px 10px purple;
+   border: 5px darkgoldenrod;
+}
+
+.image__galery #order2 {
+    box-shadow: 0px 0px 10px orange;
+    border: 5px darkgoldenrod;
+}
+.image__galery #order3 {
+    box-shadow: 0px 0px 10px brown;
+    border: 5px darkgoldenrod;
+}
+.image__galery #order4 {
+    box-shadow: 0px 0px 10px tomato;
+    border: 5px darkgoldenrod;
+}
+
+
+
+.footer{
+    grid-area: footer;
+    padding: 0rem 1.2rem 0rem 1.2rem;
+}
+
+.footer .content {
+    box-shadow: 0px 0px 10px blue;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.footer .content .footer-title {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer .content .footer_title::after {
+    content: "\a";
+    white-space: pre;
+    display: block;
+    border-bottom:2px solid #aa7eee;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer .content .social_lits {
+    display: flex;
+    flex-direction:  row;
+    align-items: center;
+}
+
+.footer .content .social-item {
+    list-style: none;
+}
+
+.footer .content .social-item::before {
+    content: "\a";
+    white-space: pre;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer .content .social-item a{
+    text-decoration: none;
+    margin-right: 1rem;
+    color: #aa7eee;
+}

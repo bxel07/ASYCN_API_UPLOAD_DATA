@@ -1,0 +1,521 @@
+
+/*Mobile screen*/
+@media screen and (max-width:480px) and (orientation: landscape) {
+    .container {
+        display: grid;
+        max-height: fit-content;
+        max-height: -moz-max-content;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer"
+        ;
+        gap: 0.8rem;
+    }
+
+    
+    .nav {
+        grid-area: nav;
+        padding: 0rem 1rem 1rem 1rem;
+    }
+
+    .nav .nav__list{
+        box-shadow: none;
+        list-style: none;
+        color: #aa7eee;
+        padding: 0.3rem 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0.1rem;
+    }
+
+    .nav .nav__list .nav__item{ 
+        box-shadow: none;
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+
+    .nav .nav__list .nav__item::after{ 
+        content: " ";
+        display: block;
+        border-bottom:2px solid #aa7eee;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    .nav .nav__list .nav__item a{ 
+        text-decoration: none;
+        color: #aa7eee;
+    }
+
+
+    
+.image__galery{
+    grid-area: main;
+    padding: 0rem 1.2rem 0rem 1.2rem;
+}
+
+.image__galery .image__order{
+    box-shadow: 0px 0px 10px white;
+    padding: 0.5rem;
+   /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-auto-flow: row;
+    gap: 1rem; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap :1rem;
+}
+
+.image__galery > .image__item{
+   position: relative;
+   flex-basis: 100px;
+   cursor: pointer;
+}
+
+.image__galery::after{
+    content: '';
+    flex-basis: 100px;
+    cursor: pointer;
+}
+
+
+.image__galery .image__item .setimage{
+    object-fit: cover;
+   /*  width: 100%;
+    height: 100%; */
+    max-width: 100px;
+    max-height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.clear {
+    display: none;
+}
+        
+}
+
+/*Potrait for mobile*/
+@media screen and (max-width:480px) and (orientation: portrait) {
+    .container {
+        display: grid;
+        max-height: fit-content;
+        max-height: -moz-max-content;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer"
+        ;
+        gap: 0.8rem;
+    }
+
+    
+    .nav {
+        grid-area: nav;
+        padding: 0rem 1rem 1rem 1rem;
+    }
+
+    .nav .nav__list{
+        box-shadow: none;
+        list-style: none;
+        color: #aa7eee;
+        padding: 0.3rem 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0.1rem;
+    }
+
+    .nav .nav__list .nav__item{ 
+        box-shadow: none;
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+
+    .nav .nav__list .nav__item::after{ 
+        content: " ";
+        display: block;
+        border-bottom:2px solid #aa7eee;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    .nav .nav__list .nav__item a{ 
+        text-decoration: none;
+        color: #aa7eee;
+    }
+
+
+        
+    .image__galery{
+        grid-area: main;
+        padding: 0rem 1.2rem 0rem 1.2rem;
+    }
+
+    .image__galery .image__order{
+        box-shadow: 0px 0px 10px white;
+        padding: 0.5rem;
+    /* display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-auto-flow: row;
+        gap: 1rem; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap :1rem;
+    }
+
+    .image__galery > .image__item{
+    position: relative;
+    flex-basis: 100px;
+    cursor: pointer;
+    }
+
+    .image__galery::after{
+        content: '';
+        flex-basis: 100px;
+        cursor: pointer;
+    }
+
+
+    .image__galery .image__item .setimage{
+        object-fit: cover;
+    /*  width: 100%;
+        height: 100%; */
+        max-width: 100px;
+        max-height: auto;
+        vertical-align: middle;
+        border-radius: 5px;
+    }
+
+    .clear {
+        display: none;
+    }
+        
+}
+
+
+
+
+/*Medscreen screen*/
+@media screen and (max-width:768px) and (orientation: landscape) {
+    .container {
+        display: grid;
+        max-height: fit-content;
+        max-height: -moz-max-content;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer"
+        ;
+        gap: 0.8rem;
+    }
+
+    
+    .nav {
+        grid-area: nav;
+        padding: 0rem 1rem 1rem 1rem;
+    }
+
+    .nav .nav__list{
+        box-shadow: none;
+        list-style: none;
+        color: #aa7eee;
+        padding: 0.5rem 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0.2rem;
+    }
+
+    .nav .nav__list .nav__item{ 
+        box-shadow: none;
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+
+    .nav .nav__list .nav__item::after{ 
+        content: " ";
+        display: block;
+        border-bottom:2px solid #aa7eee;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    .nav .nav__list .nav__item a{ 
+        text-decoration: none;
+        color: #aa7eee;
+    }
+
+
+    
+.image__galery{
+    grid-area: main;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+.image__galery .image__order{
+    box-shadow: 0px 0px 10px white;
+    padding: 0.5rem;
+   /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-auto-flow: row;
+    gap: 1rem; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap :1.2rem;
+}
+
+.image__galery > .image__item{
+   position: relative;
+   flex-basis: 120px;
+   cursor: pointer;
+}
+
+.image__galery::after{
+    content: '';
+    flex-basis: 120px;
+    cursor: pointer;
+}
+
+
+.image__galery .image__item .setimage{
+    object-fit: cover;
+   /*  width: 100%;
+    height: 100%; */
+    max-width: 120px;
+    max-height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.clear {
+    display: none;
+}
+        
+}
+
+/*Potrait for medscreen*/
+@media screen and (max-width:768px) and (orientation: portrait) {
+    .container {
+        display: grid;
+        max-height: fit-content;
+        max-height: -moz-max-content;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer"
+        ;
+        gap: 0.8rem;
+    }
+
+    
+    .nav {
+        grid-area: nav;
+        padding: 0rem 1rem 1rem 1rem;
+    }
+
+    .nav .nav__list{
+        box-shadow: none;
+        list-style: none;
+        color: #aa7eee;
+        padding: 0.3rem 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0.1rem;
+    }
+
+    .nav .nav__list .nav__item{ 
+        box-shadow: none;
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+
+    .nav .nav__list .nav__item::after{ 
+        content: " ";
+        display: block;
+        border-bottom:2px solid #aa7eee;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    .nav .nav__list .nav__item a{ 
+        text-decoration: none;
+        color: #aa7eee;
+    }
+
+
+        
+    .image__galery{
+        grid-area: main;
+        padding: 0rem 1.2rem 0rem 1.2rem;
+    }
+
+    .image__galery .image__order{
+        box-shadow: 0px 0px 10px white;
+        padding: 0.5rem;
+    /* display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-auto-flow: row;
+        gap: 1rem; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap :1rem;
+    }
+
+    .image__galery > .image__item{
+    position: relative;
+    flex-basis: 100px;
+    cursor: pointer;
+    }
+
+    .image__galery::after{
+        content: '';
+        flex-basis: 100px;
+        cursor: pointer;
+    }
+
+
+    .image__galery .image__item .setimage{
+        object-fit: cover;
+    /*  width: 100%;
+        height: 100%; */
+        max-width: 100px;
+        max-height: auto;
+        vertical-align: middle;
+        border-radius: 5px;
+    }
+
+    .clear {
+        display: none;
+    }
+        
+}
+
+
+
+
+/*Largescreen screen*/
+@media screen and (max-width:1024px) and (orientation: landscape) {
+    
+    .nav {
+        padding: 0rem 1.1rem 1.1rem 1.1rem;
+    }
+ 
+    .image__galery{
+        grid-area: main;
+        padding: 0rem 1.1rem 0rem 1.1rem;
+    }
+
+    .image__galery > .image__item{
+    position: relative;
+    flex-basis: 140px;
+    cursor: pointer;
+    }
+
+    .image__galery::after{
+        content: '';
+        flex-basis: 140px;
+        cursor: pointer;
+    }
+
+
+    .image__galery .image__item .setimage{
+        object-fit: cover;
+    /*  width: 100%;
+        height: 100%; */
+        max-width: 140px;
+        max-height: auto;
+        vertical-align: middle;
+        border-radius: 5px;
+    }
+
+
+        
+}
+
+/*Potrait for largescreen*/
+@media screen and (max-width:1024px) and (orientation: portrait) {
+    .nav {
+        padding: 0rem 1.1rem 1.1rem 1.1rem;
+    }
+ 
+    .image__galery{
+        grid-area: main;
+        padding: 0rem 1.1rem 0rem 1.1rem;
+    }
+
+    .image__galery > .image__item{
+    position: relative;
+    flex-basis: 140px;
+    cursor: pointer;
+    }
+
+    .image__galery::after{
+        content: '';
+        flex-basis: 140px;
+        cursor: pointer;
+    }
+
+
+    .image__galery .image__item .setimage{
+        object-fit: cover;
+    /*  width: 100%;
+        height: 100%; */
+        max-width: 140px;
+        max-height: auto;
+        vertical-align: middle;
+        border-radius: 5px;
+    }
+        
+}
