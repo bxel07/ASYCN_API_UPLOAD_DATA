@@ -1,3 +1,21 @@
+<?php 
+    include "config/autoloader.inc.php";
+    //$data = database::table('image')->select()->where("format = :format",["format"=>"adad"]);
+    //echo "<pre>";
+    //print_r($data);
+    $args = [
+        'name' => "doni.jpg",
+        'format' => "png",
+        'size' => 10,
+    ];
+    /* $array['name'] = "john2";
+    $data2 = User::action()->update_by_id($array, 1);
+    $data1 = User::action()->get_by_name("john1");
+    $data = User::action()->get_by_id(1); */
+    $data = User::action()->delete(1);
+    //$data = User::action()->create($args);
+    echo "<pre>";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

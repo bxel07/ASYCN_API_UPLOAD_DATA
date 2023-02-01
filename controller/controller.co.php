@@ -87,9 +87,16 @@
             $file = file_get_contents($path);
             $decode = json_decode($file,true);
             $inc = 1;
-
-
+            // save to database
             if(empty($decode[0])) {
+                $data = array (
+                        "kategori" => $this->kategori,
+                        "tag" => $this->tag,
+                        "image" => $this->name
+                );
+            }
+            //for json 
+            /* if(empty($decode[0])) {
 
                 $data = array(
                     array(
@@ -122,7 +129,7 @@
                 file_put_contents($dest,$this->dec);
                 echo "data berhasil di tambahkan"; 
 
-            }
+            } */
         }
 
         public function start() {
